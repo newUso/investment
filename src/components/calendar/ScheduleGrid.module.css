@@ -1,0 +1,13 @@
+
+/* ブロック */
+.schedule__grid {}
+
+/* 中身はGrid: 1列目=時間、2列目=人。 1行目=人ヘッダー */
+
+.schedule__grid {
+    display: grid;
+    /* 可変列: 時間列 + 人数分 */
+    grid-template-columns: var(--time-col-width, 96px);
+    /* 1行目(ヘッダー)は高さauto、以降は等間隔(--row-height) */
+    grid-auto-rows: var(--row-height, 44px);
+}

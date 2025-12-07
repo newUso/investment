@@ -1,0 +1,34 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ルートコンテナ（ブロック） */
+.app-container {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.app-container__header {
+  grid-row: 1;
+  padding: 20px;
+  border: 2px dashed #888; /* 初期は区切り線が見えるように */
+  font-size: 1rem;
+}
+
+.app-container__main {
+  grid-row: 2;
+  overflow: auto;
+  padding:20px;
+  border: 2px dashed #888; /* 初期は区切り線が見えるように */
+}
+
+.app-container__footer {
+  grid-row: 3;
+  padding: 10px;
+  border: 2px dashed #888;
+}

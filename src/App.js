@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Header from './components/ui/Header';
 import Footer from './components/ui/Footer';
 import MainContent from './components/MainContent';
-import FinanceMainContent from './components/FinanceMainContent';
+import FinanceMainContent from './components/FinanceMainContent/FinanceMainContent';
 
 import './styles/App.css'; // スタイルのインポート
 
